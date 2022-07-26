@@ -2,7 +2,10 @@
 module.exports = {
 	content: ['./index.html'],
 	theme: {
+		debugScreens: {
+			position: ['bottom', 'left'],
+		},
 		extend: {},
 	},
-	plugins: [],
+	plugins: [require('tailwindcss-debug-screens')],
 };
